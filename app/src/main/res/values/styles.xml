@@ -1,0 +1,47 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">#ffffbc00</item><!--  this is to set animating text color and underline color whileonfocus triggers-->
+        <item name="colorPrimaryDark">#ffff6724</item><!--  when the theme is set to light.notitlebar, the top notification bar will sometimes blur. To change the top notification bar color black-->
+    </style>
+    <style name="AppThemeFree" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorAccent">#A8CD85</item><!--  this is to set animating text color and underline color whileonfocus triggers-->
+        <item name="colorPrimaryDark">#75B13F</item><!--  when the theme is set to light.notitlebar, the top notification bar will sometimes blur. To change the top notification bar color black-->
+
+    </style>
+    <style name="AppThemePremium" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">#82BFE5</item><!--  this is to set animating text color and underline color whileonfocus triggers-->
+        <item name="colorPrimaryDark">#0E85CD</item><!--  when the theme is set to light.notitlebar, the top notification bar will sometimes blur. To change the top notification bar color black-->
+    </style>
+
+    <style name="mytheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="android:background">@null</item>
+        <item name="background">@null</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowDisablePreview">true</item>
+
+    </style>
+</resources>

@@ -1,0 +1,209 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+
+
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+
+
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.alphabet.atozfun"
+        minSdkVersion 15
+        targetSdkVersion 24
+        multiDexEnabled true
+        versionCode 5
+        versionName "1.4"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("/keystore/debug.keystore")
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+
+        googlePlayRelease {
+            storeFile file("/keystore/stokeKey.jks")
+            keyAlias 'atozfun123'
+            keyPassword 'atozfun123'
+            storePassword 'atozfun123'
+        }
+    }
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("boolean", "ENABLE_CRASHLYTICS", "true")
+            ext.enableCrashlytics = true
+            signingConfig signingConfigs.googlePlayRelease
+        }
+
+        debug {
+            minifyEnabled false
+            debuggable true
+            buildConfigField("boolean", "ENABLE_CRASHLYTICS", "false")
+            ext.enableCrashlytics = false
+            signingConfig signingConfigs.debug
+        }
+
+        debug_false {
+            minifyEnabled false
+            debuggable false
+            buildConfigField("boolean", "ENABLE_CRASHLYTICS", "false")
+            ext.enableCrashlytics = false
+            signingConfig signingConfigs.debug
+        }
+
+        crashlytics {
+            minifyEnabled false
+            debuggable false
+            buildConfigField("boolean", "ENABLE_CRASHLYTICS", "true")
+            ext.enableCrashlytics = true
+            signingConfig signingConfigs.googlePlayRelease
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+}
+
+
+
+
+
+
+
+
+/*
+android {
+
+
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+
+
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.alphabet.atozfun"
+        minSdkVersion 11
+        targetSdkVersion 23
+        versionCode 4
+        versionName "1.3"
+        multiDexEnabled true
+        generatedDensities = []
+    }
+    signingConfigs {
+        debug {
+            storeFile file("/keystore/debug.keystore")
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+        googlePlayRelease {
+            storeFile file("/keystore/stokeKey.jks")
+            keyAlias 'atozfun123'
+            keyPassword 'atozfun123'
+            storePassword 'atozfun123'
+        }
+    }
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("boolean", "ENABLE_CRASHLYTICS", "true")
+            ext.enableCrashlytics = true
+            signingConfig signingConfigs.googlePlayRelease
+        }
+        debug {
+            minifyEnabled false
+            debuggable true
+            buildConfigField("boolean", "ENABLE_CRASHLYTICS", "false")
+            ext.enableCrashlytics = false
+            signingConfig signingConfigs.debug
+        }
+        crashlytics {
+            minifyEnabled false
+            debuggable false
+            buildConfigField("boolean", "ENABLE_CRASHLYTICS", "true")
+            ext.enableCrashlytics = true
+            signingConfig signingConfigs.debug
+        }
+
+    }
+    productFlavors {
+        stagingBuild {
+            buildConfigField "boolean", "IS_DEMO", "false"
+        }
+
+        demoBuild {
+            buildConfigField "boolean", "IS_DEMO", "true"
+            versionCode 4
+            versionName "1.3"
+        }
+    }
+}*/
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.android.support:animated-vector-drawable:24.2.0'
+
+    compile 'com.android.support:support-vector-drawable:24.2.0'
+    compile 'com.google.android.gms:play-services:9.2.0'
+    compile 'com.google.android.gms:play-services-analytics:9.2.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.1@aar') {
+        transitive = true;
+    }
+    compile files('libs/dagger-2.4.jar')
+    compile files('libs/javax.inject-1.jar')
+    compile files('libs/vungle-publisher-adaptive-id-4.0.2.jar')
+
+
+    compile 'com.nineoldandroids:library:2.4.0'
+   // compile 'com.daimajia.easing:library:1.0.0@aar'
+}

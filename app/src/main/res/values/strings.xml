@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AtoZFun</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="e">E</string>
+    <string name="f">F</string>
+    <string name="g">G</string>
+    <string name="h">H</string>
+    <string name="i">I</string>
+    <string name="j">J</string>
+    <string name="k">K</string>
+    <string name="l">L</string>
+    <string name="m">M</string>
+    <string name="n">N</string>
+    <string name="o">O</string>
+    <string name="p">P</string>
+    <string name="q">Q</string>
+    <string name="r">R</string>
+    <string name="s">S</string>
+    <string name="t">T</string>
+    <string name="u">U</string>
+    <string name="v">V</string>
+    <string name="w">W</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="z">Z</string>
+    <string name="forFree_a">Aeroplane</string>
+    <string name="forFree_b">Ball</string>
+    <string name="forFree_c">Cat</string>
+    <string name="forFree_d">Dog</string>
+    <string name="forFree_e">Eagle</string>
+    <string name="forFree_f">Fish</string>
+    <string name="forFree_g">Gift</string>
+    <string name="forFree_h">Hammer</string>
+    <string name="forFree_i">Icecream</string>
+    <string name="forFree_j">Jam</string>
+    <string name="forFree_k">Kite</string>
+    <string name="forFree_l">Lion</string>
+    <string name="forFree_m">Monkey</string>
+    <string name="forFree_n">Nail</string>
+    <string name="forFree_o">Onion</string>
+    <string name="forFree_p">Parrot</string>
+    <string name="forFree_q">Quail</string>
+    <string name="forFree_r">Rabbit</string>
+    <string name="forFree_s">Sun</string>
+    <string name="forFree_t">Tomato</string>
+    <string name="forFree_u">Umbrella</string>
+    <string name="forFree_v">Van</string>
+    <string name="forFree_w">Whale</string>
+    <string name="forFree_x">Xmas</string>
+    <string name="forFree_y">Yacht</string>
+    <string name="forFree_z">Zebra</string>
+
+    <string name="forPremium_a">Apple</string>
+    <string name="forPremium_b">Baseball</string>
+    <string name="forPremium_c">Camera</string>
+    <string name="forPremium_d">Donkey</string>
+    <string name="forPremium_e">Elephant</string>
+    <string name="forPremium_f">Frog</string>
+    <string name="forPremium_g">Giraffe</string>
+    <string name="forPremium_h">Hen</string>
+    <string name="forPremium_i">Island</string>
+    <string name="forPremium_j">Jocker</string>
+    <string name="forPremium_k">Kangaroo</string>
+    <string name="forPremium_l">Leave</string>
+    <string name="forPremium_m">Moon</string>
+    <string name="forPremium_n">Notepad</string>
+    <string name="forPremium_o">Owl</string>
+    <string name="forPremium_p">Peacock</string>
+    <string name="forPremium_q">Queen</string>
+    <string name="forPremium_r">Rainbow</string>
+    <string name="forPremium_s">Snake</string>
+    <string name="forPremium_t">Tortoise</string>
+    <string name="forPremium_u">Unicorn</string>
+    <string name="forPremium_v">Vegetables</string>
+    <string name="forPremium_w">Wolf</string>
+    <string name="forPremium_x">Xylophone</string>
+    <string name="forPremium_y">Yarn</string>
+    <string name="forPremium_z">Zip</string>
+
+
+    <!-- AdMob ad unit IDs jegadeesh28081989@gmail.com -->
+<!--    <string name="banner_home_footer">ca-app-pub-7859004868038521/7216703499</string>
+    <string name="interstitial_full_screen">ca-app-pub-7859004868038521/1170169896</string>
+    -->
+    <string name="banner_home_footer">ca-app-pub-9298648393932857/4066549325</string>
+    <string name="interstitial_full_screen">ca-app-pub-9298648393932857/7020015725</string>
+    <!--s3 device-->
+    <!--<string name="test_device_id">1CF91C4F1851616D2E2BCBE32A2620CF</string>-->
+
+
+
+<!--    &lt;!&ndash; tab &ndash;&gt;-->
+    <!--<string name="test_device_id">E93D583CCB672336EBE881A834A3CE48</string>-->
+
+
+<!--white s4-->
+    <!--<string name="test_device_id">290A6086D50BD3D41D00A0D3DFC5134E</string>-->
+
+
+ <!--Moto -->
+    <!--<string name="test_device_id">A65CAC2C7022A055C5FDBFAE65895A60</string>- -->
+
+
+<!--Note-->
+
+    <!--<string name="test_device_id">588DBBB7BF801626912EADC720D5D6B8</string>-->
+
+
+<!--black s4-->
+
+
+    <!--<string name="test_device_id">BC061757E8D095A63083D1FAEA54F445</string>-->
+
+    <!--big tab-->
+   <string name="test_device_id">DD55DBEB0D5E8C676820F7B119CDA86D</string>
+
+
+
+</resources>

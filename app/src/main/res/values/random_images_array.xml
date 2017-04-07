@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="random_images_array">
+        <item>@drawable/a_areoplane_free</item>
+        <item>@drawable/b_ball_free</item>
+        <item>@drawable/c_cat_free</item>
+        <item>@drawable/d_dog_free</item>
+        <item>@drawable/e_eagle_free</item>
+        <item>@drawable/f_fish_free</item>
+        <item>@drawable/g_gift_free</item>
+        <item>@drawable/h_hammer_free</item>
+        <item>@drawable/i_icecream_free</item>
+        <item>@drawable/j_jam_free</item>
+        <item>@drawable/k_kite_free</item>
+        <item>@drawable/l_lion_free</item>
+        <item>@drawable/m_monkey_free</item>
+        <item>@drawable/n_nail_free</item>
+        <item>@drawable/o_onion_free</item>
+        <item>@drawable/p_parrot_free</item>
+        <item>@drawable/q_quail_free</item>
+        <item>@drawable/r_rabbit_free</item>
+        <item>@drawable/s_sun_free</item>
+        <item>@drawable/t_tomato_free</item>
+        <item>@drawable/u_umbrella_free</item>
+        <item>@drawable/v_van_free</item>
+        <item>@drawable/w_whale_free</item>
+        <item>@drawable/x_xmas_free</item>
+        <item>@drawable/y_yacht_free</item>
+        <item>@drawable/z_zebra_free</item>
+    </array>
+
+</resources>

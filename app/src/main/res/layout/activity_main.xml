@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/root_layout"
+    android:background="@drawable/main_bg_gradient"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/img_left"
+            android:padding="5dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/left_arrow"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/img_right"
+            android:padding="5dp"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/right_arrow"
+            />
+        <com.alphabet.atozfun.circle_page_indicator.CirclePageIndicator
+            android:id="@+id/pager_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:layout_above="@+id/pager_indicator"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_home_footer">
+
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_free"
+            android:layout_width="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:clickable="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/free_rounded_corner_bg"
+            app:srcCompat="@drawable/a"
+            />
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_below="@+id/img_free"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/img_premium"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/premium_rounded_corner_bg"
+                android:padding="5sp"
+                app:srcCompat="@drawable/a"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/locked"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_mic"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="60dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_view"
+            android:padding="10dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/volume"
+            />
+
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

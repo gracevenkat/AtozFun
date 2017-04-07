@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--TextView, EditText, Button style-->
+    <declare-styleable name="RMTypeface">
+        <attr name="typeface" format="integer">
+            <enum name="sig_bold" value="0x0" />
+            <enum name="sig_light" value="0x1" />
+            <enum name="sig_regular" value="0x2" />
+            <enum name="sig_semibold" value="0x3" />
+            <enum name="hel_medium" value="0x4" />
+            <enum name="hel_light" value="0x5" />
+            <enum name="hel_bold" value="0x6" />
+            <enum name="hel_normal" value="0x7" />
+            <enum name="riad_pro_regular" value="0x8" />
+            <enum name="courier_new" value="0x9"/>
+            <enum name="courier_new_bold" value="0x10"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- Spring Page Indicator style-->
+    <declare-styleable name="SpringPageIndicator">
+        <attr name="dotDiameter" format="dimension" />
+        <attr name="dotGap" format="dimension" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="pageIndicatorColor" format="color" />
+        <attr name="currentPageIndicatorColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="AutofitTextView">
+        <attr name="minTextSize" format="dimension" />
+        <attr name="precision" format="float" />
+        <attr name="sizeToFit" format="boolean" />
+    </declare-styleable>
+
+</resources>

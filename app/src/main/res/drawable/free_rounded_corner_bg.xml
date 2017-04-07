@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <gradient android:centerColor="#ADD08D"
+            android:startColor="#73B03C"
+            android:endColor="#89BB5E"/>
+        <stroke
+            android:width="1dp"
+            android:color="#CB1F23" />
+        <corners
+            android:bottomLeftRadius="5dp"
+            android:bottomRightRadius="5dp"
+            android:topLeftRadius="5dp"
+            android:topRightRadius="5dp" />
+
+    </shape>
+
+</inset>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+<color name="green">#4CAE4C</color>
+<color name="app_green">#006A5F</color>
+<color name="app_green_with_alpha">#c5006A5F</color>
+<color name="background_grey">#F0F0F0</color>
+<color name="edit_text_color">#1E1E1E</color>
+<color name="white">#ffffff</color>
+<color name="back_pressed">#24000000</color>
+<color name="light_grey">#ABABAB</color>
+<color name="menu_background_black">#333333</color>
+<color name="menu_view_color">#4D4D4D</color>
+<color name="menu_text_black">#1E1E1E</color>
+<color name="edit_account_grey">#787878</color>
+<color name="menu_text_selected">#8FC3BB</color>
+<color name="red">#CF4227</color>
+<color name="bold_color">#404044</color>
+<color name="bold_color_light">#3F403F</color>
+<color name="feedback_bg_color">#F0F0F0</color>
+<color name="record_top_bar">#E6E6E6</color>
+<color name="text_grey">#666666</color>
+<color name="black">#000000</color>
+<color name="layout_transparent">#123445</color>
+<color name="swype_1">#ff92ff2f</color>
+<color name="swype_2">#ffffbc00</color>
+<color name="swype_3">#ff12ffa0</color>
+<color name="swype_4">#ffff6724</color>
+
+
+
+
+</resources>

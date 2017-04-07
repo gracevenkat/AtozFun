@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "313465143718",
+    "project_id": "firebase-atozfun"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313465143718:android:ee1dafd8fcefd737",
+        "android_client_info": {
+          "package_name": "com.alphabet.atozfun"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJw2nuHSP5kWaa9Qa-QRh4_p2nSjpzkrE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-81330043-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
